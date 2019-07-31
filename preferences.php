@@ -78,7 +78,7 @@
 	<main>
 		<form action="" method="POST">	
 		<label>Number of topics per row: <input name="topics" type="number" value="<?php echo $num_topics;?>" min="0" max="<?php echo $max_topics;?>"/></label>
-		<label>Number of questions to show: <input name="questions_to_show" type="number" value="<?php echo $num_of_questions;?>" min="0" max="<?php echo $max_questions;?>"/></label>
+		<label>Number of questions to show: <input name="questions_to_show" type="number" value="<?php echo $num_of_questions;?>" min="0" max="4"/></label>
 		<input type="submit" value="submit"/>
 		</form>
 		<?php
