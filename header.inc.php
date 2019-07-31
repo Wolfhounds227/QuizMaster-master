@@ -1,9 +1,11 @@
 		<header>
+			<a href="index.php" title="SILC Quiz Master">
             <image id = "silc" src="Images/index_images/silc_home.jpg"></image>
+			</a>
             <!--Link To About-->
           <nav>
 		    <a href="index.php">Home</a>
-			<a href = "#">About</a>
+			<a href = "about.php">About</a>
             <!--Link To Help-->
             <a href = "#">Help</a>
 			<?php
