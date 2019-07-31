@@ -18,7 +18,10 @@
 	$result3 = run_sql($sql3); 
 	$max_questions = $result3->fetch_assoc()['count(id)'];
 ?>
-
+<?php
+//echo '<p>'.$max_topics.'</p>';
+//echo '<p>'.$max_questions.'</p>';
+?>
 <!DOCTYPE>
 <html>
 <head>
