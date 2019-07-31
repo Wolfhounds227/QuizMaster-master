@@ -50,6 +50,11 @@ header input {
 			display:block;
 			text-align:center;
 		}
+#congrats {
+        width: 50px;
+        height: 50px;
+		margin:0px;
+}	
 </style>
 </head>
 		
@@ -273,9 +278,9 @@ while($row = $result->fetch_assoc()){
 		 }
       }
       document.write("<style> #table_1 {border-spacing: 200px 0px;} .congrats { text-align: center; } #congratsi {height: 200px; width: 200px; display: block; margin-left: auto; margin-right: auto;}</style>");
-      document.write("<table id = 'table_1'><tr><td><img id = 'silc' src='Images/index_images/silc_home.jpg'></td><td id = 'text'><a href = 'about.html'>About</a></td><td id = 'text'><a href = 'help.html'>Help</a></td></tr></table>");
+      document.write("<table id = 'table_1'><tr><td><img id = 'silc' src='Images/index_images/silc_home.jpg'></td><td id = 'text'><a href = 'index.php'>Home</a></td><td id = 'text'><a href = 'help.html'>Help</a></td></tr></table>");
       document.write("<br> <p class = 'congrats' >Congratulations</p>");
-      document.write("<img id = 'congrats' src='Images/about_images/thumbsup.jpg'>")
+      document.write("<img id ='congrats' src='Images/about_images/thumbsup.jpg'>")
       document.write("<p class = 'congrats'>Your final score: ", count, " out of ", HOW_MANY, "</p>");
 	  
 	  score_quiz.forEach((item,index) => {

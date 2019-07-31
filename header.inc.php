@@ -3,7 +3,7 @@
             <!--Link To About-->
           <nav>
 		    <a href="index.php">Home</a>
-			<a href = "about.php">About</a>
+			<a href = "#">About</a>
             <!--Link To Help-->
             <a href = "#">Help</a>
 			<?php
