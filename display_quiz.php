@@ -303,7 +303,7 @@ while($row = $result->fetch_assoc()){
       var selected_question = mini_question_bank[index];
 
       // now update the default question with the selected question
-      document.getElementById("question").innerHTML = "question number: " + (index+1) + "<br>" + selected_question.question;
+      document.getElementById("question").innerHTML = (index+1) + '.) ' + selected_question.question;
       document.getElementById("choice_1_label").innerHTML = selected_question.choice_1;
       document.getElementById("choice_2_label").innerHTML = selected_question.choice_2;
       document.getElementById("choice_3_label").innerHTML = selected_question.choice_3;
