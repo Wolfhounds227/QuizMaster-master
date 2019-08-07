@@ -1,5 +1,9 @@
 <?php
 session_start();
+if($_SESSION['loggedin'] === false){
+header("Location: login.php");
+}
+else {	
 $page_title = "Questions";
 
 require 'db_config.php';
@@ -9,7 +13,7 @@ $sql = 'select * from questions';
 $result = run_sql($sql);
 
 // print_r($result); // <-- use for debugging and test DB fetching
-
+}
 ?>
 
 <!DOCTYPE HTML>
