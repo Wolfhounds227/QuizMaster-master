@@ -1,6 +1,6 @@
 		<header>
 			<a href="index.php" title="SILC Quiz Master">
-            <image id = "silc" src="Images/index_images/silc_home.jpg"></image>
+            <img id = "silc" src="Images/index_images/silc_home.jpg"></img>
 			</a>
             <!--Link To About-->
           <nav>

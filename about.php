@@ -51,7 +51,12 @@ require 'db_config.php';
 	header a{
 			display:inline-block;
 			margin:10px;
-		}	
+		}
+	#bear {
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+	}
 </style>
 	</head>
     <body>
@@ -71,7 +76,8 @@ include "header.inc.php";
  
     <h1 id="welcome">About Us</h1>
     <h3 class="directions">This quizmaster project was created in Summer 2019 school year at Metropolitan State University. We took a site and modified the code and created new code to create backend and frontend logic. We did this project to enhance our knowledge on html,javascript,php and css. You can read the bio of all the contributors of this project. <br> </h3>
-    <h3 class="directions">TEAM BEARS ROAR.</h3>
+    <img id="bear" src="Images/about_images/roar.jpg"></img>
+	<h3 class="directions">TEAM BEARS ROAR.</h3>
 
 
 <script>
