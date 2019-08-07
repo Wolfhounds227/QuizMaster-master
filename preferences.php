@@ -17,6 +17,12 @@
 	$sql3 = "select count(id) from questions;";
 	$result3 = run_sql($sql3); 
 	$max_questions = $result3->fetch_assoc()['count(id)'];
+	if(isset($_POST['submitbtn'])){
+		session_start();
+		$_SESSION['loggedin'] = true;
+		header('Location: index.php');
+		exit();
+	}
 ?>
 <?php
 //echo '<p>'.$max_topics.'</p>';
@@ -82,7 +88,7 @@
 		<form action="" method="POST">	
 		<label>Number of topics per row: <input name="topics" type="number" value="<?php echo $num_topics;?>" min="1" max="<?php echo $max_topics;?>"/></label>
 		<label>Number of questions to show: <input name="questions_to_show" type="number" value="<?php echo $num_of_questions;?>" min="1" max="4"/></label>
-		<input type="submit" value="submit"/>
+		<input name="submitbtn"type="submit" value="submit"/>
 		</form>
 		<?php
 			if(isset($error)){
