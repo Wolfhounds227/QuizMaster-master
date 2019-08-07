@@ -4,7 +4,7 @@ session_start();
 ?>
 <html>
     <head>
-        <title>QuizMaster Home Page</title>
+        <title>Summer 2019.ICS325.Version 2.0</title>
     <style>
 
         #silc {
