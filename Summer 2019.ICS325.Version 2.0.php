@@ -32,7 +32,7 @@ session_start();
   <?php
 include "header.inc.php";
 ?>  
-    <h1 id="welcome"><strong>Welcome to the QuizMaster website!</strong></h1>
+    <h1 id="welcome"><strong>Summer 2019.ICS325.Version 2.0/strong></h1>
 <p>Each of the icons on the home page represents a topic. When you mouse over any of the icons, the name of the topic will be shown. Click on any of them to take a short quiz.</p>
 <p><img src="Images/help/icons.jpg" alt="icons" width="600" height="400"><p>
 <p>&nbsp;</p>
