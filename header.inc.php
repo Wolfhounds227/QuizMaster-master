@@ -7,7 +7,7 @@
 		    <a href="index.php">Home</a>
 			<a href = "about.php">About</a>
             <!--Link To Help-->
-            <a href = "#">Help</a>
+            <a href = "help.php">Help</a>
 			<?php
 				if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
 					echo "<a href='logout.php'>Log Out</a>";

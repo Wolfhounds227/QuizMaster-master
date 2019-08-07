@@ -58,7 +58,7 @@ $page_title = "QuizMaster";
         }
 		header {
 			text-align:center;
-		}
+			}
 		header a{
 			display:inline-block;
 			margin:10px;
