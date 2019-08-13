@@ -64,6 +64,7 @@ $result = run_sql($sql);
     <thead>
 
 	<tr>
+		<th>Topic</th> 
 		<th>Question</th>   
 		<th>Choice 1</th>
 		<th>Choice 2</th>
@@ -79,6 +80,7 @@ $result = run_sql($sql);
 	while($row = $result->fetch_assoc()){
 		$id=$row['id'];
 		echo '<tr>';
+		echo '<td>'.$row['topic'].'</td>';
 		echo '<td>'.$row['question'].'</td>';
 		echo '<td>'.$row['choice_1'].'</td>';
 		echo '<td>'.$row['choice_2'].'</td>';

@@ -32,6 +32,9 @@ $id = $_GET['id'];
 ?>
 <!DOCTYPE HTML>
 <html>
+<?php 
+	include 'header.inc.php';
+?>
 <head>
 <title><?php echo htmlspecialchars($page_title);?></title>
     <!-- Bootstrap core CSS -->
@@ -45,8 +48,7 @@ $id = $_GET['id'];
 		font-family: sans-serif;	
 		text-decoration: none;
 		padding: 5px 10px;
-		background: linear-gradient(cyan,navy);
-		color: aliceblue;
+		
 	}
 	
 	</style>
