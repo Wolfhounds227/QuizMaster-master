@@ -18,7 +18,7 @@ $result = run_sql($sql);
 
 <!DOCTYPE HTML>
 <html>
-<head>
+<head> 
 <title><?php echo htmlspecialchars($page_title);?></title>
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -57,7 +57,7 @@ $result = run_sql($sql);
 		include "header.inc.php";
 		?>
 <main>		
-<a href='create_question.php' class="create_question" >Create Question</a>
+<a id="thishead" href='create_question.php' class="create_question" >Create Question</a>
 
 <table class="table table-striped" id="questions_table">
             <div class="table responsive">
