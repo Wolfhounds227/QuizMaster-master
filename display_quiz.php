@@ -222,9 +222,15 @@ while($row = $result->fetch_assoc()){
    //**********************************************
    // STEP 7:  Select HOW_MANY questions 
    //**********************************************
+	if(HOW_MANY <= question_bank.length){
    var mini_question_bank = question_bank.slice(0, HOW_MANY);
 	var score_quiz = [];
-
+	}else {
+	var score_quiz = [];	
+	var mini_question_bank = question_bank.slice(0,question_bank.length) 	
+		
+	}
+	
 
    //**********************************************
    // STEP 8:  Display the first question 
@@ -281,7 +287,7 @@ while($row = $result->fetch_assoc()){
       document.write("<table id = 'table_1'><tr><td><img id = 'silc' src='Images/index_images/silc_home.jpg'></td><td id = 'text'><a href = 'index.php'>Home</a></td><td id = 'text'><a href = 'help.html'>Help</a></td></tr></table>");
       document.write("<br> <p class = 'congrats' >Congratulations</p>");
       document.write("<img id ='congrats' src='Images/about_images/thumbsup.jpg'>")
-      document.write("<p class = 'congrats'>Your final score: ", count, " out of ", HOW_MANY, "</p>");
+      document.write("<p class = 'congrats'>Your final score: ", count, " out of ", mini_question_bank.length, "</p>");
 	  
 	  score_quiz.forEach((item,index) => {
 		  var isCorrect = (item)?"Correct":"Incorrect" + "<br>" + "Correct answer is " + answer;
@@ -366,7 +372,7 @@ while($row = $result->fetch_assoc()){
       }
 
       // if index == HOW_MANY, disable the next button
-      if (index == HOW_MANY-1) {
+      if (index == mini_question_bank.length - 1) {
          next_btn.disabled = true;
       } else {
          next_btn.disabled = false;
