@@ -4,7 +4,7 @@ session_start();
 ?>
 <html>
     <head>
-        <title>Summer 2019.ICS325.Version 2.0</title>
+        <title>Summer 2016.ICS325.Version 2.0</title>
     <style>
 
         #silc {
